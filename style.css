@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #b890e7;
+}
+
+h1{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 100px;
+  font-family: 'Parisienne', cursive;
+  background-image: url("sparkle.gif");
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #000080;
+}
+
+.library {
+  display: grid;
+  height: 1000px;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+}
+
+p {
+  padding: 2px 2px 2px 2px;
+  text-align: center;
+  font-size: 25px;
+  background-image: url("sparkle.gif");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: #e5d3ff 1px 0 10px;
+}
+
+/* contains the image, caption text, and dim background overlay */
+.container {
+  position: relative;
+  width: 100%;
+  border: 1px solid #000080;
+  background-color: #e7d4fe;
+  box-shadow: 5px 5px #000080;
+}
+
+/* contains caption text */
+.overlay {
+  position: absolute;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color:  #dabbff;
+}
+.container:hover .overlay {
+  opacity: 0.9;
+}
+.text {
+  color: #000080;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
