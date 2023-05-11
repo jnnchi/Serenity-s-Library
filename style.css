@@ -2,11 +2,12 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #b890e7;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 h1{
   text-align: center;
-  padding-top: 25px;
   padding-bottom: 25px;
   font-size: 100px;
   font-family: 'Parisienne', cursive;
