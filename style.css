@@ -75,7 +75,7 @@ p {
 }
 
 /* CSS */
-a {
+.btn {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   border: 0;
@@ -99,7 +99,7 @@ a {
   cursor: pointer;
 }
 
-a:active,
-a:hover {
+.btn:active,
+.btn:hover {
   outline: 0;
 }
